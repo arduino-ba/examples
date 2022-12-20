@@ -1,7 +1,7 @@
 # Arduino - Beginner to Advanced
-### Code Samples
+### Examples
 
-Code samples are organized according to the chapters:
+Code samples and examples are organized under individual chapters:
 
 * :beginner: [Chapter 01](./Chapter-01)
 * :beginner: [Chapter 02](./Chapter-02)
