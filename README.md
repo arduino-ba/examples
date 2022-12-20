@@ -1,5 +1,4 @@
 # Arduino - Beginner to Advanced
-### Examples
 
 Code samples and examples are organized under individual chapters:
 
