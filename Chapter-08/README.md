@@ -1,3 +1,3 @@
-# Chapter 8 - Example Projects
+# Chapter 8: Example Projects
 ### Examples
 

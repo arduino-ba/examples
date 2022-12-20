@@ -1,3 +1,3 @@
-# Chapter 9 - Best Practices
+# Chapter 9: Best Practices
 ### Examples
 

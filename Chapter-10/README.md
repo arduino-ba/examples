@@ -1,3 +1,3 @@
-# Chapter 10 - Further Learning
+# Chapter 10: Further Learning
 ### Examples
 

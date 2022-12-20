@@ -1,3 +1,3 @@
-# Chapter 7 - Arduino Libraries
+# Chapter 7: Arduino Libraries
 ### Examples
 
