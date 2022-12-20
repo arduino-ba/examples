@@ -1,3 +1,3 @@
-# Chapter 5
+# Chapter 5 - Understanding Arduino
 ### Examples
 
