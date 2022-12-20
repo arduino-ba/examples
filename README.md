@@ -1,5 +1,5 @@
 # Arduino - Beginner to Advanced
-## Code Samples
+### Code Samples
 
 Code samples are organized according to the chapters:
 
