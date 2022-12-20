@@ -3,7 +3,6 @@
 
 Code samples are organized according to the chapters:
 
-<!--
 * :beginner: [Chapter 01](./Chapter-01)
 * :beginner: [Chapter 02](./Chapter-02)
 * :beginner: [Chapter 03](./Chapter-03)
@@ -14,4 +13,4 @@ Code samples are organized according to the chapters:
 * :beginner: [Chapter 08](./Chapter-08)
 * :beginner: [Chapter 09](./Chapter-09)
 * :beginner: [Chapter 10](./Chapter-10)
--->
+
