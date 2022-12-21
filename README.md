@@ -2,7 +2,7 @@
 
 Code samples and examples are organized under individual chapters:
 
-* :beginner: [Chapter 1](./Chapter-01): ***Introduction***
+* :beginner: Chapter 1: ***Introduction***
 * :beginner: [Chapter 2](./Chapter-02): ***Revisiting C++***
 * :beginner: [Chapter 3](./Chapter-03): ***Revisiting C++ — Variables, Pointers, and Control Flow***
 * :beginner: [Chapter 4](./Chapter-04): ***Revisiting C++ — Functions, Classes, and Namespaces***
