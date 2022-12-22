@@ -1,3 +1,3 @@
-# Chapter 3: Revisiting C++ — Variables, Pointers, and Control Flow
+# Chapter 3: Revisiting C++ — Constants, Variables, Structures, and Control Flow
 ### Examples
 

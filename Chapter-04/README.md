@@ -1,3 +1,3 @@
-# Chapter 4: Revisiting C++ — Functions, Classes, and Namespaces
+# Chapter 4: Revisiting C++ — Functions, Classes, Namespaces, and Pointers
 ### Examples
 
