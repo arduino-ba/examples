@@ -5,9 +5,7 @@ private:
     int x, y;
 
 protected:
-    Object(int x_value, int y_value) {
-        x = x_value;
-        y = y_value;
+    Object(int x_value, int y_value) : x(x_value), y(y_value) {
     }
     int get_x() { return x; }
     int get_y() { return y; }
