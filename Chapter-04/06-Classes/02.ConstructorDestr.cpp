@@ -13,6 +13,12 @@ public:
         std::cout << real << " + "
                   << complex << "j" << std::endl;
     }
+
+    ~ComplexNumber() {
+        std::cout << "Destroying: "
+                  << real << " + "
+                  << complex << "j" << std::endl;
+    }
 };
 
 int main() {
