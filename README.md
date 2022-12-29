@@ -9,6 +9,6 @@ Code samples and examples are organized under individual chapters:
 * :beginner: Chapter 5: ***Understanding the Hardware***
 * :beginner: [Chapter 6](./Chapter-06): ***Understanding Arduino***
 * :beginner: [Chapter 7](./Chapter-07): ***Example Projects***
-* :beginner: [Chapter 8](./Chapter-08): ***Best Practices***
-* :beginner: [Chapter 9](./Chapter-09): ***Further Learning***
+* :beginner: Chapter 8: ***Best Practices***
+* :beginner: Chapter 9: ***Further Learning***
 
