@@ -1,3 +1,3 @@
-# Chapter 6: Understanding the Hardware
+# Chapter 6: Understanding Arduino
 ### Examples
 
