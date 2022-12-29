@@ -8,8 +8,7 @@ Code samples and examples are organized under individual chapters:
 * :beginner: [Chapter 4](./Chapter-04): ***Revisiting C++ — Functions, Classes, Namespaces, and Pointers***
 * :beginner: Chapter 5: ***Understanding the Hardware***
 * :beginner: [Chapter 6](./Chapter-06): ***Understanding Arduino***
-* :beginner: [Chapter 7](./Chapter-07): ***Arduino Libraries***
-* :beginner: [Chapter 8](./Chapter-08): ***Example Projects***
-* :beginner: [Chapter 9](./Chapter-09): ***Best Practices***
-* :beginner: [Chapter 10](./Chapter-10): ***Further Learning***
+* :beginner: [Chapter 7](./Chapter-07): ***Example Projects***
+* :beginner: [Chapter 8](./Chapter-08): ***Best Practices***
+* :beginner: [Chapter 9](./Chapter-09): ***Further Learning***
 
