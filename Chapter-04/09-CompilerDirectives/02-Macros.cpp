@@ -12,10 +12,10 @@ int function_div(int v1, int v2) { return v1 / v2; }
 #define op(number,value1,value2)  function_##number(value1,value2)
 
 int main() {
-    std::cout << V1 << " + " << V2 << " = " << op(add, V1, V2) << std::endl;
-    std::cout << V1 << " - " << V2 << " = " << op(sub, V1, V2) << std::endl;
-    std::cout << V1 << " x " << V2 << " = " << op(mul, V1, V2) << std::endl;
-    std::cout << V1 << " / " << V2 << " = " << op(div, V1, V2) << std::endl;
+    cout << V1 << " + " << V2 << " = " << op(add, V1, V2) << endl;
+    cout << V1 << " - " << V2 << " = " << op(sub, V1, V2) << endl;
+    cout << V1 << " x " << V2 << " = " << op(mul, V1, V2) << endl;
+    cout << V1 << " / " << V2 << " = " << op(div, V1, V2) << endl;
 
     return 0;
 }
