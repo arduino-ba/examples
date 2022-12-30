@@ -21,8 +21,8 @@ void on_key_release(char key) {
 // ------------------------
 constexpr unsigned char rows = 4;
 constexpr unsigned char cols = 4;
-constexpr unsigned char rowPins[rows] = {2, 3, 4, 5};
-constexpr unsigned char colPins[cols] = {6, 7, 8, 9};
+constexpr unsigned char rowPins[rows] = {9, 8, 7, 6};
+constexpr unsigned char colPins[cols] = {5, 4, 3, 2};
 constexpr char keyMap[] = {
   //   Col-1   Col-2   Col-3   Col-4
        '1',    '2',    '3',    'A', // Row-1
