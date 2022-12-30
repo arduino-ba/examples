@@ -13,7 +13,7 @@
 #define KEY_UNPRESSED_SYMBOL               HIGH
 #define KEY_PRESSED_SYMBOL                 LOW
 
-ubrant::KeypadReader::KeypadReader(keypad_callback_t on_key_down, keypad_callback_t on_key_up,
+cblk::KeypadReader::KeypadReader(keypad_callback_t on_key_down, keypad_callback_t on_key_up,
                  const unsigned char num_rows, const unsigned char num_cols,
                  const unsigned char* row_pins, const unsigned char* col_pins,
                  const char* key_map) {
@@ -40,7 +40,7 @@ ubrant::KeypadReader::KeypadReader(keypad_callback_t on_key_down, keypad_callbac
   }
 }
 
-void ubrant::KeypadReader::update() {
+void cblk::KeypadReader::update() {
   for (unsigned char r = 0; r < rows; r++) {
     SET_ALL_ROW_PINS_HIGH;
     
