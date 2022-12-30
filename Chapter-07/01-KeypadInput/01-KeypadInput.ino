@@ -1,10 +1,11 @@
-#include "CyclicTaskExecutor.h"
 #include "KeypadReader.h"
 
-using namespace ubrant;
+using namespace cblk;
 
-// Keypad Reading Area
-//
+// ------------------------
+// Keypad Events
+// ------------------------
+
 void on_key_press(char key) {
   Serial.print(key);
   Serial.println('+');
@@ -15,6 +16,9 @@ void on_key_release(char key) {
   Serial.println('-');
 }
 
+// ------------------------
+// Defining Keypad
+// ------------------------
 constexpr unsigned char rows = 4;
 constexpr unsigned char cols = 4;
 constexpr unsigned char rowPins[rows] = {2, 3, 4, 5};
@@ -29,30 +33,16 @@ constexpr char keyMap[] = {
 
 KeypadReader keypad(on_key_press, on_key_release, rows, cols, rowPins, colPins, keyMap);
 
-
-// Keypad Task Running Area
-//
-void read_keypad() {
-  keypad.update();
-}
-
-void heartbeat() {
-  Serial.print(".");
-}
-
-CyclicTaskExecutor keypad_reader_task(read_keypad, 50);
-CyclicTaskExecutor heartbeat_task(heartbeat, 1000);
-
-
-// Standard Functions
-//
+// ------------------------
+// Initialization
+// ------------------------
 void setup() {
   Serial.begin(115200);
 }
 
+// ------------------------
+// Main loop
+// ------------------------
 void loop() {
-  unsigned long t = millis();
-
-  keypad_reader_task.update(t);
-  heartbeat_task.update(t);
+  keypad.update();
 }

@@ -4,7 +4,8 @@
 #define INVOKE_KEY_DOWN_HANDLER(r, c)      if (onKeyDown != NULL) onKeyDown(keyMap[r * cols + c]);
 #define INVOKE_KEY_UP_HANDLER(r, c)        if (onKeyUp   != NULL) onKeyUp(keyMap[r * cols + c]);
 
-#define SET_ALL_ROW_PINS_HIGH              for (unsigned char __r = 0; __r < rows; __r++) { digitalWrite(rowPins[__r], HIGH); }
+#define SET_ALL_ROW_PINS_HIGH              for (unsigned char __r = 0; __r < rows; __r++) \
+                                           { digitalWrite(rowPins[__r], HIGH); }
 
 #define IS_KEY_STATUS_CHANGED(r, c, val)   keysStatus[r * cols + c] != val
 #define SET_KEY_STATUS(r, c, val)          keysStatus[r * cols + c] = val

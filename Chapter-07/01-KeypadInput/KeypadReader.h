@@ -1,12 +1,12 @@
-namespace ubrant {
+namespace cblk {
   typedef void(*keypad_callback_t)(char);
   
   class KeypadReader {
     private:
-    keypad_callback_t onKeyDown = NULL;
-    keypad_callback_t onKeyUp   = NULL;
+    keypad_callback_t onKeyDown = nullptr;
+    keypad_callback_t onKeyUp   = nullptr;
 
-    static constexpr unsigned char timePerRow_us = 2;
+    static const unsigned char timePerRow_us = 2;
 
     unsigned char rows;
     unsigned char cols;
