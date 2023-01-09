@@ -1,6 +1,8 @@
 #include <iostream>
 
+
 using namespace std;
+
 
 int get_number_from_user() {
     int value;
