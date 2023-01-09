@@ -1,6 +1,8 @@
 #include "KeypadReader.h"
 
+
 using namespace cblk;
+
 
 // ------------------------
 // Keypad Events
@@ -16,9 +18,11 @@ void on_key_release(char key) {
   Serial.println('-');
 }
 
+
 // ------------------------
-// Defining Keypad
+// Defining the Keypad
 // ------------------------
+
 constexpr unsigned char rows = 4;
 constexpr unsigned char cols = 4;
 constexpr unsigned char rowPins[rows] = {9, 8, 7, 6};
@@ -33,16 +37,20 @@ constexpr char keyMap[] = {
 
 KeypadReader keypad(on_key_press, on_key_release, rows, cols, rowPins, colPins, keyMap);
 
+
 // ------------------------
 // Initialization
 // ------------------------
+
 void setup() {
   Serial.begin(115200);
 }
 
+
 // ------------------------
 // Main loop
 // ------------------------
+
 void loop() {
   keypad.update();
 }
