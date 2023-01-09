@@ -1,8 +1,10 @@
 #include <iostream>
 
+
 struct MyStructure {
     int x, y, z;
 };
+
 
 int main() {
     int int_value;
