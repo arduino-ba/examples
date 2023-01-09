@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stdarg.h>
 
+
 int sum_all(int total_args, ...) {
     va_list args_list;
 
@@ -9,14 +10,18 @@ int sum_all(int total_args, ...) {
     va_start(args_list, total_args);
 
     int sum = 0;
+    
     for(int i = 0; i < total_args; i++) {
-        sum += va_arg(args_list, int );
+        
+        sum += va_arg(args_list, int);
+        
     }
     
     va_end(args_list);
 
     return sum;
 }
+
 
 int main() {
     int sum;
