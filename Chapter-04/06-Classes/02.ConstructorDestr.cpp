@@ -1,5 +1,6 @@
 #include <iostream>
 
+
 class ComplexNumber {
 private:
     int real, complex;
@@ -9,6 +10,7 @@ public:
         real = r;
         complex = c;
     }
+    
     void print() {
         std::cout << real << " + "
                   << complex << "j" << std::endl;
@@ -20,6 +22,7 @@ public:
                   << complex << "j" << std::endl;
     }
 };
+
 
 int main() {
     ComplexNumber cn1(1, 2), cn2(5, 8);
