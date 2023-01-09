@@ -8,6 +8,7 @@ void set_pin_mode() {
 void blink_once() {
   digitalWrite(13, HIGH);
   delay(1000);
+  
   digitalWrite(13, LOW);
   delay(1000);
 }
