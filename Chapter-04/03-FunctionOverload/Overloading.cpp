@@ -1,9 +1,11 @@
 #include <iostream>
 
+
 void send(int number);
 void send(long long number);
 void send(float number);
 void send(double number);
+
 
 int main() {
     int       intNumber = 10;
@@ -18,6 +20,7 @@ int main() {
 
     return 0;
 }
+
 
 void send(int number) {
     std::cout << "Sending INTEGER " << number << std::endl;
