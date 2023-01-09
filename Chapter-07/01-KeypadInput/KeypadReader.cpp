@@ -1,6 +1,7 @@
 #include <Arduino.h>
 #include "KeypadReader.h"
 
+
 #define INVOKE_KEY_DOWN_HANDLER(r, c)      if (onKeyDown != NULL) onKeyDown(keyMap[r * cols + c]);
 #define INVOKE_KEY_UP_HANDLER(r, c)        if (onKeyUp   != NULL) onKeyUp(keyMap[r * cols + c]);
 
@@ -12,6 +13,7 @@
 
 #define KEY_UNPRESSED_SYMBOL               HIGH
 #define KEY_PRESSED_SYMBOL                 LOW
+
 
 cblk::KeypadReader::KeypadReader(keypad_callback_t on_key_down, keypad_callback_t on_key_up,
                  const unsigned char num_rows, const unsigned char num_cols,
@@ -30,9 +32,11 @@ cblk::KeypadReader::KeypadReader(keypad_callback_t on_key_down, keypad_callback_
   keyMap = key_map;
   keysStatus = new char[rows * cols];
 
+  // Setting pin modes for Row and Column pins
   for (unsigned char r = 0; r < rows; r++) { pinMode(rowPins[r], OUTPUT); }
   for (unsigned char c = 0; c < cols; c++) { pinMode(colPins[c], INPUT_PULLUP); }
 
+  // Initializing key pressed states - initially depressed
   for (unsigned char r = 0; r < rows; r++) {
     for (unsigned char c = 0; c < cols; c++) {
       keysStatus[r * cols + c] = KEY_UNPRESSED_SYMBOL;
@@ -41,24 +45,38 @@ cblk::KeypadReader::KeypadReader(keypad_callback_t on_key_down, keypad_callback_
 }
 
 void cblk::KeypadReader::update() {
+  
   for (unsigned char r = 0; r < rows; r++) {
+    
     SET_ALL_ROW_PINS_HIGH;
+    
     
     digitalWrite(rowPins[r], LOW);
     delayMicroseconds(timePerRow_us);
     
+    
     for (unsigned char c = 0; c < cols; c++) {
+      
       unsigned char val = digitalRead(colPins[c]);
       
       if (IS_KEY_STATUS_CHANGED(r, c, val)) {
+        
         if (val == KEY_PRESSED_SYMBOL) {
+          
           INVOKE_KEY_DOWN_HANDLER(r, c);
+          
         } else {
+          
           INVOKE_KEY_UP_HANDLER(r, c);
+          
         }
 
         SET_KEY_STATUS(r, c, val);
-      }
-    }
-  }
-}
+        
+      } //- if
+      
+    } //- for loop - inner
+    
+  } //- for loop - outer
+  
+} //- function
