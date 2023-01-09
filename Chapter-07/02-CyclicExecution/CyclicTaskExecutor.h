@@ -1,5 +1,7 @@
 namespace cblk {
+  
   typedef void(*func_ptr_t)();
+  
   
   class CyclicTaskExecutor {
     private:
@@ -7,6 +9,7 @@ namespace cblk {
     func_ptr_t funcPtr;
     unsigned int callingInterval_ms;
     unsigned long lastCalledTime_ms;
+  
     
     public:
     
@@ -14,4 +17,5 @@ namespace cblk {
     void change_interval(unsigned int calling_interval_ms, bool call_on_zero = false);
     void update(unsigned long current_time_ms);
   };
+  
 }
