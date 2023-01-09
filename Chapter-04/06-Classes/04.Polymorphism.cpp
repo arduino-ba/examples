@@ -1,5 +1,6 @@
 #include <iostream>
 
+
 class Object {
 public:
     virtual void draw() {
@@ -7,12 +8,14 @@ public:
     }
 };
 
+
 class Box : public Object {
 public:
     void draw() override {
         std::cout << "Box draw" << std::endl;
     }
 };
+
 
 int main() {
     Object *ptr1, *ptr2;
