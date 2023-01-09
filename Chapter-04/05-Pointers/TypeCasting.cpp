@@ -1,10 +1,13 @@
 #include <iostream>
 
+
 int main() {
     int int_value = 0x00FFEEDD;
     double double_value = 3.14159;
     unsigned char *ptr;
 
+    
+    
     // Integer's bytes:
     ptr = (unsigned char *)&int_value;
 
@@ -14,8 +17,12 @@ int main() {
         std::cout << std::hex << (int)*ptr++ << " ";
     }
 
+    
+    
     std::cout << std::endl;
 
+    
+    
     // Double's bytes:
     ptr = (unsigned char *)&double_value;
 
@@ -25,7 +32,11 @@ int main() {
         std::cout << std::hex << (int)*ptr++ << " ";
     }
 
+    
+    
     std::cout << std::endl;
+    
+    
     
     return 0;
 }
