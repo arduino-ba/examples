@@ -1,6 +1,6 @@
 # Arduino - Beginner to Advanced
 
-Code samples and examples are organized under individual chapters:
+Examples given in the book are organized under individual chapters:
 
 * :beginner: Chapter 1: ***Introduction***
 * :beginner: [Chapter 2](./Chapter-02): ***Revisiting C++***
